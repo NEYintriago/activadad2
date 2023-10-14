@@ -1,0 +1,167 @@
+//ejercicio de los videos 1
+//entrada edad=0 usuario
+//proceso leer edadusuario
+//salidad  resultado mostrar años 
+funcion edad1
+	Definir edadUsuario como entero
+	escribir "que edad tienes "
+	leer edadUsuario
+	escribir edadUsuario,"  años";
+FinFuncion
+
+//ejercicio de los videso 2 
+//entrada  num1=o(leida ) num2=0(leida )
+//Proceso ingrese el num1 ingrese el num 2 
+//salida resultado de num1+ num2
+funcion suma 
+	definir num1,num2,resultado Como Entero
+	escribir "ingrese el numero 1"
+	leer num1;
+	escribir "ingrese el numero 2"
+	leer num2;
+	resultado<-num1+num2
+	escribir "el resultado es " , resultado;
+FinFuncion
+//ejercicio de los videos 3
+//entrada  edad proceso edad=0(leer)
+//salida eres mayor de edad 
+funcion eres_mayor
+	definir edad Como Entero
+	edad<-17
+	si edad>=10 Entonces
+		Escribir "eres mayor de edad"
+	sino 
+		escribir"eres menor de edad "
+	FinSi
+	
+FinFuncion
+//ejercicio de los videos 4
+//entrada edad=o(leida )  proceso dinero=0(leida) 
+//salida resultado si no tienes dinero ve a casa 
+funcion de_compra 
+	sed<-"no"
+	dinero<-"si"
+	si sed="si" y dinero="si" entonces 
+		Escribir "compra una botella  de agua "
+	sino 
+		si sed="no" y dinero="si" entonces 
+			escribir "compra un chocolate"
+		
+		sino 
+			escribir "no tienes dinero , ve para la casa..."
+			
+		FinSi
+		
+	FinSi
+FinFuncion
+//ejercicio de los videos 5
+//entrada numaleatorio=(leida) numUsuario=(leida) intentos <- intentos-1
+//Proceso si numero_aleatorio=numusuario
+//salida ya no te quedan intentos 
+funcion numero_aleatorio
+	definir numaleatorio Como Entero
+	numaleatorio<-aleatorio(0,10);
+	intentos <-3;
+	Mientras intentos>0 Hacer
+		escribir"ingresa un numero de 0 a 10 "
+		leer numusuario;
+		si numaleatorio=numusuario entonces 
+			escribir "guau eres  genial, es correcto es: ", numaleatorio;
+			intentos <-0
+		sino 
+			intentos<-intentos-1;
+			escribir "perdiste, te quedan ", intentos, "intentos ";
+		FinSi
+		
+	Fin Mientras
+	si intentos=0 entonces 
+		escribir "ya no te quedan intentos  perdiste "
+	sino 
+		escribir "ganaste"
+	FinSi
+	
+FinFuncion
+//ejercicios de los vides 6
+//entrada combo=(leida ) Escribir que  combo desea ; proceso combo=1 combo=2 combo=3
+//salida segun combo=1(leer) combo=2(leer) combo=3(leer)
+funcion valor_de_los_combo
+	Escribir "que combo desea"
+	Escribir "1; combo 1"
+	Escribir "2; combo 2"
+	escribir "3; combo 3"
+	definir combo Como Entero
+	leer combo ;
+	Segun combo Hacer
+		1:
+			Escribir " el valor es de 5.000"
+		2:
+			Escribir "el valor es de 2.500"
+		3:
+			escribir "el valor es de 1.000"
+		De Otro Modo:
+			escribir " no tenemos lo que busca "
+	Fin Segun
+	
+FinFuncion
+//ejercicio de los video 7 
+// entrada num=0(leida ) respuesta=(leida )
+// proceso num<-aleatorio
+//escribir numaleatorio 
+//escribir desea otro numero 
+// salida respuesta no 
+
+funcion numero7
+	definir num como entero;
+	definir respuesta como caracter 
+	Repetir
+		num<-Aleatorio(0,10)
+		Escribir "el numero aleatorio es : " ,num ;
+		escribir " deseas otro numero " ;
+		leer respuesta ;
+		
+	Hasta Que respuesta="no"
+FinFuncion
+//ejercicio de los videos 8
+// entrada dimensiones personas 
+// proceso personas (1)  personas (2)  personas (3)
+// salida el nombre de mi arreglo es personas (i)
+funcion arreglo 
+	Dimension personas(3)
+	personas(1)<-"ignacio";
+	personas(2)<-"victor";
+	personas(3)<-"juanito";
+	
+	Para i<-1 Hasta 3 Con Paso 1 Hacer
+		Escribir "el nombre de mi arreglo es : ",personas(i)
+	Fin Para
+	
+	
+FinFuncion
+//ejercicio de los videos 9
+// uns funcion fuera del algoritmo 
+//leer=dato1 leer= dato2 
+// sumar (dato1,dato2)
+
+	funcion sumar (dato1,dato2)
+		Escribir "el resultado es: " ,dato1+dato2
+FinFuncion
+funcion sumar2
+	leer dato1;
+	leer dato2;
+	sumar(dato1,dato2)
+	sumar(dato1,dato2)
+FinFuncion
+
+Algoritmo videos
+	//edad1
+	//suma 
+	//eres_mayor
+	//de_compra
+	//numero_aleatorio
+	//valor_de_los_combo
+	//numero7
+	//arreglo
+	//sumar2
+FinAlgoritmo
+
+	
